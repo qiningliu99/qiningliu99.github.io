@@ -152,6 +152,156 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-数组元素的删除和插入示例" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/03/05/%E6%95%B0%E7%BB%84%E5%85%83%E7%B4%A0%E7%9A%84%E5%88%A0%E9%99%A4%E5%92%8C%E6%8F%92%E5%85%A5%E7%A4%BA%E4%BE%8B/">数组元素的删除和插入示例 </a>
+    </h1>
+  
+
+        
+        <a href="/2020/03/05/%E6%95%B0%E7%BB%84%E5%85%83%E7%B4%A0%E7%9A%84%E5%88%A0%E9%99%A4%E5%92%8C%E6%8F%92%E5%85%A5%E7%A4%BA%E4%BE%8B/" class="archive-article-date">
+  	<time datetime="2020-03-05T11:32:24.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-05</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <pre><code>2020 年 3 月 5 日 19:33</code></pre><hr>
+<pre><code>例如： 
+  输入学生的成绩值
+
+  132.5  122.0  135.0 144.0 105.5</code></pre><hr>
+<p>   /*<br>     1.先降序排序 – 从大到小。<br>     2.删除成绩值122.0。<br>     3.插入新的数值并保持降序。<br>   */</p>
+<p>   #include&lt;stdio.h&gt;<br>   int main(void)<br>   {<br>    //1.查找要删除的数字及其下标<br>    //2.找到之后 从下标开始 后面一个数值覆盖前面一个数值<br>    //3.数组总长度减一<br>    //定义该数组并初始化<br>    int count = 5;                        //数组总长度<br>    double grades[] = {132.5, 122.0, 135.0, 144.0, 105.5};<br>    int i,j;       //循环变量<br>    int temp = 0;  //临时变量用作交换<br>    double searchgrade;   //输入查找的数值<br>    int deletegrade = -1; //记录数值的下标<br>    double insertgrade;   //插入新的数值</p>
+<pre><code>//外层循环控制轮数 （数组长度 - 1）
+
+for(i = 0;i &lt; count - 1;i++)
+{
+    //内层循环控制次数（数组长度 - 1） - 当前的轮数
+
+    for(j = 0;j &lt; count - i - 1;j++)
+    {
+    //降序排序 如果数值小于后面一个数字则交换
+    if(grades[j] &lt; grades[j + 1])
+    {
+        temp = grades[j];
+        grades[j] = grades[j + 1];
+        grades[j + 1] = temp;
+    }
+    }
+}
+printf(&quot;排序后的数组为：&quot;);
+for(i = 0;i &lt; count;i++)
+{
+   printf(&quot;%.2lf\t&quot;,grades[i]);
+}
+//删除成绩值122.0.
+//查找该成绩值及其它的下标
+printf(&quot;\n请用户输入需要查找的数值：&quot;);
+scanf(&quot;%lf&quot;,&amp;searchgrade);
+for(i = 0;i &lt; count;i++)
+    {
+    if(searchgrade == grades[i])
+     {
+    deletegrade = i;             //如果找到了记录其下标
+    break;
+      }
+}
+//根据是否找到下标判断 是否进行下面的程序
+if(-1 == deletegrade)
+{
+    printf(&quot;\n抱歉，没有找到你所输入的数值.\n&quot;);
+}
+//否者就是找到了
+else
+{
+    //从下标开始 后面一个覆盖前面一个都数值
+    for(i = deletegrade;i &lt; count - 1;i++)
+    {
+      grades[i] = grades[i + 1];
+    }
+}
+count--;
+//删除完毕后 一定记得数组总长度减一
+printf(&quot;删除后的数组是：&quot;);
+for(i = 0;i &lt; count ;i++)
+{
+    printf(&quot;%.2lf\t&quot;,grades[i]);
+}
+
+//插入新的数值并保持降序
+printf(&quot;输入新的数值：&quot;);
+scanf(&quot;%lf&quot;,&amp;insertgrade);
+grades[count] = insertgrade;
+count++;
+for(i = 0;i &lt; count - 1;i++)
+{
+    for(j = 0;j &lt; count - i - 1;j++)
+         {
+        if(grades[j] &lt; grades[j + 1])
+        {
+            temp = grades[j];
+            grades[j] = grades[j + 1];
+            grades[j + 1] = temp;
+        }
+     }    
+}
+
+printf(&quot;排序后的数组为：&quot;);
+for(i = 0;i &lt; count;i++)
+{
+    printf(&quot;%.2lf\t&quot;,grades[i]);
+}    
+
+return 0;</code></pre><p>   }</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2020/03/05/%E6%95%B0%E7%BB%84%E5%85%83%E7%B4%A0%E7%9A%84%E5%88%A0%E9%99%A4%E5%92%8C%E6%8F%92%E5%85%A5%E7%A4%BA%E4%BE%8B/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-冒泡排序" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
