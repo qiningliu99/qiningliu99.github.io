@@ -152,6 +152,88 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-codeblocks的音效问题" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/03/06/codeblocks%E7%9A%84%E9%9F%B3%E6%95%88%E9%97%AE%E9%A2%98/">codeblocks的音效问题</a>
+    </h1>
+  
+
+        
+        <a href="/2020/03/06/codeblocks%E7%9A%84%E9%9F%B3%E6%95%88%E9%97%AE%E9%A2%98/" class="archive-article-date">
+  	<time datetime="2020-03-06T14:28:10.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-06</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <pre><code>2020 年 3 月 6 日 22:31</code></pre><hr>
+<pre><code>#include &lt;stdio.h&gt;
+#include &lt;stdlib.h&gt;
+#include &lt;windows.h&gt;
+#pragma comment(lib,&quot;Winmm.lib&quot;)
+#include &lt;mmsystem.h&gt;
+
+
+int main()
+{
+
+  printf(&quot;Hello world!\n&quot;);
+      //播放音乐
+    PlaySound(TEXT(&quot;songs\\背景音乐.wav&quot;),NULL,SND_FILENAME | SND_ASYNC |          SND_LOOP );
+    system(&quot;pause&quot;);
+    return 0;
+    }</code></pre><hr>
+<pre><code>第一天:
+报错：warning: ignoring #pragma comment  [-Wunknown-pragmas]
+网上查找目前路径正确，是wav文件 加入链接器winmm.a 和其他链接器-lwinmm
+尚未找到确切解决问题的办法,全发出系统的警报声音</code></pre>
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2020/03/06/codeblocks%E7%9A%84%E9%9F%B3%E6%95%88%E9%97%AE%E9%A2%98/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-数组元素的删除和插入示例" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
