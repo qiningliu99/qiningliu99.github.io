@@ -152,6 +152,90 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-关于C语言函数" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/03/08/%E5%85%B3%E4%BA%8EC%E8%AF%AD%E8%A8%80%E5%87%BD%E6%95%B0/">关于C语言函数</a>
+    </h1>
+  
+
+        
+        <a href="/2020/03/08/%E5%85%B3%E4%BA%8EC%E8%AF%AD%E8%A8%80%E5%87%BD%E6%95%B0/" class="archive-article-date">
+  	<time datetime="2020-03-08T08:22:12.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-08</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <hr>
+<pre><code>#include &lt;time.h&gt;   //头文件包括了srand和rand函数
+srand(time(NULL));  //表示设置一个随机种子，每次运行都能保证随机种子的不通
+rand() % 10 + 5;    //rand() % 11 表示取值在0-10之间  +5 表示在原基础加上5
+即5-15之间</code></pre><hr>
+<hr>
+<pre><code>#include &lt;string.h&gt; //头文件表示支持字符串的操作
+scanf(&quot;%s&quot;,i);      //字符串录入可以不要&amp;符号
+levels[ i ] = levels[ i ] &gt;= 4 ? 4 : levels[ i ] + 1;
+//这里是三目操作符 意思是 当前的等级i是否大于或等于4 如果大于或等于4 则吧4赋值    
+给levels[ i ]否者就把 levels[ i ] + 1的值赋值给i
+
+strcmp(seachname,names[ i ]) == 0  //如果输入的字符与字符组中相同则是正确的
+相当于整型数组的 恒等于
+
+strcpy(names[ i ] , names[ i + 1]); //后面一个字符串的数组覆盖前面一个字符串的        数组与整型的   names[ i ] = names[ i + 1]; 相同</code></pre><hr>
+<hr>
+<pre><code>#include &lt;windows.h&gt;
+#pragma comment(lib,&quot;Winmm.lib&quot;)  //
+#include &lt;mmsystem.h&gt;    
+PlaySound(TEXT(&quot;E:\\Codeblock\\codeblocks-16.01mingw-setup\\EmperorDemo\\bin\        \Debug\\songs\\背景音乐.wav&quot;),NULL,SND_FILENAME | SND_ASYNC | SND_LOOP );
+//播放音乐的  头文件和函数</code></pre><hr>
+<pre><code>（待修改）</code></pre>
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2020/03/08/%E5%85%B3%E4%BA%8EC%E8%AF%AD%E8%A8%80%E5%87%BD%E6%95%B0/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-codeblocks的音效问题" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
