@@ -194,7 +194,16 @@ int main()
 网上查找目前路径正确，是wav文件 加入链接器winmm.a 和其他链接器-lwinmm
 尚未找到确切解决问题的办法,全发出系统的警报声音</code></pre><hr>
 <pre><code>第二天：
-在网上百度还是没找到确切的办法一直都是叮叮叮的系统报警声</code></pre>
+在网上百度还是没找到确切的办法一直都是叮叮叮的系统报警声</code></pre><hr>
+<pre><code>第三天：
+找到确切原因 未把目录全部输入 导致无法识别
+正确的方法：
+网上1.将音乐文件（aa.wav）放入项目目录-&gt;bin目录-&gt;Debug目录
+    2.设置-&gt;编译器-&gt;链接器设置-&gt;其它链接选项加入-lwinmm
+    3.如果还是无法成功请像我下面格式一样把所有的目录输入进去
+PlaySound(TEXT(&quot;E:\\Codeblock\\codeblocks-16.01mingw-setup\\EmperorDemo\\bin\\Debug\\songs\\我已经到了幻想尽头.wav&quot;),NULL,SND_FILENAME | SND_ASYNC | SND_LOOP );
+
+                                （完结）</code></pre>
       
 
       
