@@ -6,17 +6,17 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>关于C语言函数 | Hexo</title>
+  <title>计算机网络原理 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="#include &lt;time.h&gt;   &#x2F;&#x2F;头文件包括了srand和rand函数 srand(time(NULL));  &#x2F;&#x2F;表示设置一个随机种子，每次运行都能保证随机种子的不通 rand() % 10 + 5;    &#x2F;&#x2F;rand() % 11 表示取值在0-10之间  +5 表示在原基础加上5 即5-15之间  #include &lt;string.h&gt; &#x2F;&#x2F;头文件表示支">
+  <meta name="description" content="关于换算的问题 通常讲储存空间的时候一般    1Mbit &#x3D; 1024kbit &#x3D; 1024*1024bit 讲速率的时候特别是宽带    1mbit&#x2F;s &#x3D; 1000 * 1000bit&#x2F;s  1Byte &#x3D; 8bit 1kb &#x3D; 1024Byte 1MB &#x3D; 1024KB 1GB &#x3D; 1024MB 通常Byte简写为B（大写） 而bit 简写为（b）可以这么记忆大写的为大单位数值小 小写的">
 <meta property="og:type" content="article">
-<meta property="og:title" content="关于C语言函数">
-<meta property="og:url" content="http://yoursite.com/2020/03/08/%E5%85%B3%E4%BA%8EC%E8%AF%AD%E8%A8%80%E5%87%BD%E6%95%B0/index.html">
+<meta property="og:title" content="计算机网络原理">
+<meta property="og:url" content="http://yoursite.com/2020/03/19/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%8E%9F%E7%90%86/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="#include &lt;time.h&gt;   &#x2F;&#x2F;头文件包括了srand和rand函数 srand(time(NULL));  &#x2F;&#x2F;表示设置一个随机种子，每次运行都能保证随机种子的不通 rand() % 10 + 5;    &#x2F;&#x2F;rand() % 11 表示取值在0-10之间  +5 表示在原基础加上5 即5-15之间  #include &lt;string.h&gt; &#x2F;&#x2F;头文件表示支">
+<meta property="og:description" content="关于换算的问题 通常讲储存空间的时候一般    1Mbit &#x3D; 1024kbit &#x3D; 1024*1024bit 讲速率的时候特别是宽带    1mbit&#x2F;s &#x3D; 1000 * 1000bit&#x2F;s  1Byte &#x3D; 8bit 1kb &#x3D; 1024Byte 1MB &#x3D; 1024KB 1GB &#x3D; 1024MB 通常Byte简写为B（大写） 而bit 简写为（b）可以这么记忆大写的为大单位数值小 小写的">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2020-03-08T08:22:12.000Z">
-<meta property="article:modified_time" content="2020-03-08T08:44:39.274Z">
+<meta property="article:published_time" content="2020-03-19T12:51:49.000Z">
+<meta property="article:modified_time" content="2020-03-19T13:01:25.361Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
   
@@ -154,20 +154,20 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-关于C语言函数" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-计算机网络原理" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      关于C语言函数
+      计算机网络原理
     </h1>
   
 
         
-        <a href="/2020/03/08/%E5%85%B3%E4%BA%8EC%E8%AF%AD%E8%A8%80%E5%87%BD%E6%95%B0/" class="archive-article-date">
-  	<time datetime="2020-03-08T08:22:12.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-08</time>
+        <a href="/2020/03/19/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%8E%9F%E7%90%86/" class="archive-article-date">
+  	<time datetime="2020-03-19T12:51:49.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-19</time>
 </a>
         
       </header>
@@ -175,28 +175,10 @@
     <div class="article-entry" itemprop="articleBody">
       
         <hr>
-<pre><code>#include &lt;time.h&gt;   //头文件包括了srand和rand函数
-srand(time(NULL));  //表示设置一个随机种子，每次运行都能保证随机种子的不通
-rand() % 10 + 5;    //rand() % 11 表示取值在0-10之间  +5 表示在原基础加上5
-即5-15之间</code></pre><hr>
-<hr>
-<pre><code>#include &lt;string.h&gt; //头文件表示支持字符串的操作
-scanf(&quot;%s&quot;,i);      //字符串录入可以不要&amp;符号
-levels[ i ] = levels[ i ] &gt;= 4 ? 4 : levels[ i ] + 1;
-//这里是三目操作符 意思是 当前的等级i是否大于或等于4 如果大于或等于4 则吧4赋值    
-给levels[ i ]否者就把 levels[ i ] + 1的值赋值给i
+<pre><code>关于换算的问题</code></pre><p> 通常讲储存空间的时候一般<br>    1Mbit = 1024kbit = 1024*1024bit<br> 讲速率的时候特别是宽带<br>    1mbit/s = 1000 * 1000bit/s</p>
+<p> 1Byte = 8bit<br> 1kb = 1024Byte<br> 1MB = 1024KB<br> 1GB = 1024MB<br> 通常Byte简写为B（大写） 而bit 简写为（b）可以这么记忆大写的为大单位数值小 小写的为小单位数值较大 1B = 8b</p>
+<p>  常用的带宽单位 b/s（bps）<br>  KB/s = 10e3b/s<br>  MB/s = 10e6b/s<br>  GB/s = 10e9b/s<br>  TB/s = 10e12b/s</p>
 
-strcmp(seachname,names[ i ]) == 0  //如果输入的字符与字符组中相同则是正确的
-相当于整型数组的 恒等于
-
-strcpy(names[ i ] , names[ i + 1]); //后面一个字符串的数组覆盖前面一个字符串的        数组与整型的   names[ i ] = names[ i + 1]; 相同</code></pre><hr>
-<hr>
-<pre><code>#include &lt;windows.h&gt;
-#pragma comment(lib,&quot;Winmm.lib&quot;)  //
-#include &lt;mmsystem.h&gt;    
-PlaySound(TEXT(&quot;E:\\Codeblock\\codeblocks-16.01mingw-setup\\EmperorDemo\\bin\        \Debug\\songs\\背景音乐.wav&quot;),NULL,SND_FILENAME | SND_ASYNC | SND_LOOP );
-//播放音乐的  头文件和函数</code></pre><hr>
-<pre><code>（待修改）</code></pre>
       
 
       
@@ -275,7 +257,7 @@ PlaySound(TEXT(&quot;E:\\Codeblock\\codeblocks-16.01mingw-setup\\EmperorDemo\\bi
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2020/03/08/%E5%85%B3%E4%BA%8EC%E8%AF%AD%E8%A8%80%E5%87%BD%E6%95%B0/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2020/03/19/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%8E%9F%E7%90%86/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -289,18 +271,9 @@ PlaySound(TEXT(&quot;E:\\Codeblock\\codeblocks-16.01mingw-setup\\EmperorDemo\\bi
   
 <nav id="article-nav">
   
-    <a href="/2020/03/19/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%8E%9F%E7%90%86/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          计算机网络原理
-        
-      </div>
-    </a>
   
-  
-    <a href="/2020/03/06/codeblocks%E7%9A%84%E9%9F%B3%E6%95%88%E9%97%AE%E9%A2%98/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">codeblocks的音效问题</div>
+    <a href="/2020/03/08/%E5%85%B3%E4%BA%8EC%E8%AF%AD%E8%A8%80%E5%87%BD%E6%95%B0/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">关于C语言函数</div>
       <i class="icon-circle-right"></i>
     </a>
   
